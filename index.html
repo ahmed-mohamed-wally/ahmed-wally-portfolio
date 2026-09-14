@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Ahmed Mohamed Wally — Artificial Intelligence and IoT Student Portfolio">
+<title>Ahmed Wally | AI & IoT Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060814;--panel:#0c1020;--text:#f5f7ff;--muted:#9da7bf;--blue:#31c7ff;--violet:#8b5cf6;--pink:#d946ef;--line:rgba(130,150,220,.16)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 78% 16%,rgba(49,199,255,.12),transparent 25%),radial-gradient(circle at 15% 75%,rgba(139,92,246,.13),transparent 28%),var(--bg);color:var(--text);line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{position:fixed;z-index:10;top:18px;left:50%;transform:translateX(-50%);width:min(1080px,92%);display:flex;align-items:center;justify-content:space-between;padding:13px 18px;border:1px solid var(--line);border-radius:18px;background:rgba(6,8,20,.75);backdrop-filter:blur(18px)}
+.brand{font-weight:900;font-size:21px}.brand i{font-style:normal;color:var(--blue)}.links{display:flex;gap:24px;font-size:12px;color:#c9d1e5}.links a:hover{color:#fff}.talk{padding:10px 16px;border:1px solid rgba(49,199,255,.45);border-radius:999px;font-size:12px;font-weight:800}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr .95fr;gap:50px;align-items:center;padding:125px 0 70px}.eyebrow{display:inline-block;padding:7px 12px;border:1px solid rgba(139,92,246,.35);border-radius:999px;background:rgba(139,92,246,.09);color:#c8b7ff;font-size:10px;letter-spacing:1.5px;font-weight:800}.hero h1{font-size:clamp(48px,7vw,78px);line-height:.98;letter-spacing:-3px;margin:18px 0 14px}.gradient{background:linear-gradient(90deg,var(--blue),#7c8cff,var(--pink));-webkit-background-clip:text;color:transparent}.hero h2{font-size:22px;color:#d7dded;margin-bottom:13px}.hero p{max-width:600px;color:var(--muted);font-size:15px}.buttons{display:flex;gap:12px;margin:26px 0}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;border:1px solid var(--line);font-size:12px;font-weight:800}.primary{background:linear-gradient(100deg,#168fff,var(--violet),var(--pink));box-shadow:0 0 35px rgba(100,100,255,.2)}.social{display:flex;gap:18px;color:#b9c2d8;font-size:12px}.social a:hover{color:var(--blue)}
+.visual{position:relative;display:flex;justify-content:center;align-items:center}.ring{width:min(480px,90vw);aspect-ratio:1;border-radius:50%;padding:10px;background:linear-gradient(135deg,var(--blue),var(--violet),var(--pink));box-shadow:0 0 80px rgba(91,104,255,.25)}.ring-inner{width:100%;height:100%;border-radius:50%;padding:5px;background:#070a15;overflow:hidden}.ring-inner img{width:100%;height:100%;object-fit:cover;border-radius:50%}.badge{position:absolute;padding:10px 14px;border:1px solid rgba(49,199,255,.28);border-radius:14px;background:rgba(7,10,21,.82);backdrop-filter:blur(12px);font-size:11px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.25)}.b1{left:0;top:18%}.b2{right:0;top:32%}.b3{left:8%;bottom:12%}.b4{right:5%;bottom:6%}
+section{padding:95px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}.head h3{font-size:35px;line-height:1.1}.head p{max-width:560px;color:var(--muted);font-size:14px}.tag{color:var(--blue);font-size:10px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase}.grid{display:grid;gap:18px}.about{grid-template-columns:1.15fr .85fr}.card{padding:28px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012))}.card h4{font-size:20px;margin-bottom:10px}.card p{color:var(--muted);font-size:14px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{padding:20px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.02)}.fact b{display:block;font-size:21px}.fact span{font-size:11px;color:var(--muted)}
+.skills{grid-template-columns:repeat(4,1fr)}.skill{padding:23px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}.skill strong{color:var(--blue);font-size:11px}.skill h4{margin:8px 0}.skill p{color:var(--muted);font-size:12px}
+.projects{grid-template-columns:repeat(2,1fr)}.project{min-height:275px}.type{color:var(--blue);font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase}.project h4{font-size:23px;margin:8px 0}.project p,.project li{color:var(--muted);font-size:13px}.project ul{margin:13px 0 0 18px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:18px}.chip{padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:#cbd3e5;font-size:10px}
+.timeline{border-left:1px solid var(--line);padding-left:25px}.item{position:relative;margin-bottom:30px}.item:before{content:"";position:absolute;left:-30px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--blue);box-shadow:0 0 15px var(--blue)}.item small{color:var(--blue);font-size:11px;font-weight:800}.item h4{margin:5px 0}.item p{color:var(--muted);font-size:13px}
+.contact{display:grid;grid-template-columns:1fr .8fr;gap:18px}.contact-main{padding:34px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,rgba(49,199,255,.09),rgba(139,92,246,.07))}.contact-main h3{font-size:34px;margin:8px 0}.contact-main p{color:var(--muted);font-size:14px}.contact-list{display:grid;gap:10px}.contact-item{padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.02)}.contact-item small{display:block;color:var(--muted);font-size:10px}.contact-item b{font-size:13px}
+footer{padding:30px 0 45px;border-top:1px solid var(--line);color:#737e96;font-size:11px}
+@media(max-width:850px){.links{display:none}.hero,.about,.contact{grid-template-columns:1fr}.visual{order:-1}.ring{width:min(410px,86vw)}.skills{grid-template-columns:1fr 1fr}.projects{grid-template-columns:1fr}.head{display:block}.head p{margin-top:10px}}
+@media(max-width:520px){.skills,.facts{grid-template-columns:1fr}.hero h1{font-size:48px}.buttons{flex-direction:column}.btn{width:100%}.badge{display:none}}
+</style>
+</head>
+<body>
+<nav><a class="brand" href="#home">A<i>W</i>.</a><div class="links"><a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#education">EDUCATION</a><a href="#contact">CONTACT</a></div><a class="talk" href="#contact">LET'S TALK</a></nav>
+
+<main id="home">
+<section class="hero wrap">
+<div>
+<span class="eyebrow">AI • IoT • DATA • EMBEDDED SYSTEMS</span>
+<h1>Ahmed <span class="gradient">Mohamed Wally</span></h1>
+<h2>Artificial Intelligence & IoT Student</h2>
+<p>I build practical intelligent solutions across AI, data analytics, signal processing, embedded systems, and IoT — turning technical problems into useful, measurable outcomes.</p>
+<div class="buttons"><a class="btn primary" href="#projects">Explore My Work</a><a class="btn" href="Ahmed_Wally_CV.pdf" download>Download CV</a></div>
+<div class="social"><a href="https://www.linkedin.com/in/ahmed-wally-4b312728b" target="_blank">LinkedIn ↗</a><a href="mailto:ahmedwally880@gmail.com">Email ↗</a><span>Menoufia, Egypt</span></div>
+</div>
+<div class="visual">
+<div class="ring"><div class="ring-inner"><img src="ai-iot-avatar.png" alt="AI and IoT professional avatar"></div></div>
+<div class="badge b1">AI / ML</div><div class="badge b2">IoT</div><div class="badge b3">PYTHON</div><div class="badge b4">DATA</div>
+</div>
+</section>
+
+<section id="about"><div class="wrap"><div class="head"><div><span class="tag">About me</span><h3>Building intelligent<br>solutions with purpose.</h3></div><p>Ambitious Artificial Intelligence student specializing in IoT, with a foundation spanning data, machine learning, NLP, signal processing, and embedded systems.</p></div><div class="grid about"><div class="card"><h4>My Value</h4><p>I combine analytical problem solving with hands-on engineering. My work covers the data lifecycle from cleaning and analysis to intelligent applications, while also connecting software with sensors and embedded systems.</p></div><div class="facts"><div class="fact"><b>2023–2027</b><span>B.Sc. Artificial Intelligence</span></div><div class="fact"><b>IoT</b><span>Specialization</span></div><div class="fact"><b>Python + SQL</b><span>Core tools</span></div><div class="fact"><b>AI + Data</b><span>Main focus</span></div></div></div></div></section>
+
+<section id="skills"><div class="wrap"><div class="head"><div><span class="tag">Capabilities</span><h3>Skills & Services</h3></div><p>A practical technical stack aligned with AI, analytics, engineering, and connected systems.</p></div><div class="grid skills">
+<div class="skill"><strong>01</strong><h4>AI & Machine Learning</h4><p>Machine Learning, NLP, Deep Learning foundations, AI-driven problem solving.</p></div>
+<div class="skill"><strong>02</strong><h4>Data & BI</h4><p>Python, Pandas, NumPy, SQL, Power BI, Excel/VBA, data cleaning and ETL.</p></div>
+<div class="skill"><strong>03</strong><h4>IoT & Embedded</h4><p>Embedded Systems, sensor integration, IoT frameworks, circuit design.</p></div>
+<div class="skill"><strong>04</strong><h4>Signal Processing</h4><p>MATLAB, Fourier Transforms, ECG filtering and signal analysis.</p></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap"><div class="head"><div><span class="tag">Selected work</span><h3>Featured Projects</h3></div><p>Three projects are documented in the CV. The fourth is clearly marked as a proposed project rather than falsely presented as completed work.</p></div><div class="grid projects">
+<div class="card project"><span class="type">AI Security</span><h4>AWA — Alert Without Alarm</h4><p>Intelligent security system using AI Agents and NLP to interpret hacker intent through command analysis and prioritize silent detection.</p><ul><li>Command-intent analysis</li><li>Real-time threat assessment</li><li>AI Agents + NLP</li></ul><div class="chips"><span class="chip">Python</span><span class="chip">NLP</span><span class="chip">AI Agents</span><span class="chip">Security</span></div></div>
+<div class="card project"><span class="type">Biomedical Signal Processing</span><h4>Biomedical Signal Processor</h4><p>MATLAB-based ECG signal processor designed to reduce noise and improve signal clarity for analysis.</p><ul><li>ECG filtering</li><li>Fourier Transform</li><li>Noise reduction</li></ul><div class="chips"><span class="chip">MATLAB</span><span class="chip">DSP</span><span class="chip">FFT</span><span class="chip">ECG</span></div></div>
+<div class="card project"><span class="type">Data Analytics • BI</span><h4>Predictive Data Dashboard</h4><p>Dynamic Power BI dashboard concept transforming complex datasets into clear visual insights for decision-making.</p><ul><li>Interactive visualization</li><li>Data preparation</li><li>Actionable insights</li></ul><div class="chips"><span class="chip">Power BI</span><span class="chip">ETL</span><span class="chip">Excel</span><span class="chip">Analytics</span></div></div>
+<div class="card project"><span class="type">Proposed Portfolio Project</span><h4>Smart Environment Monitor</h4><p>A proposed IoT project combining sensors, embedded systems, and Python analytics to monitor environmental conditions and surface anomalies.</p><ul><li>Sensor data collection</li><li>IoT monitoring workflow</li><li>Python analytics</li></ul><div class="chips"><span class="chip">IoT</span><span class="chip">Sensors</span><span class="chip">Python</span><span class="chip">Embedded</span></div></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><div class="head"><div><span class="tag">Background</span><h3>Education & Training</h3></div></div><div class="card timeline">
+<div class="item"><small>2023 — 2027</small><h4>B.Sc. in Artificial Intelligence — IoT Specialization</h4><p>Faculty of Artificial Intelligence, Menoufia University. Focus on Neural Networks, Digital Signal Processing, IoT Architectures, Data Structures, Logic Circuits, and Embedded AI.</p></div>
+<div class="item"><small>Professional Training</small><h4>Professional AI Diploma — Instant Academy</h4><p>Training in Machine Learning, Deep Learning, and NLP applications.</p></div>
+<div class="item"><small>Technical Training</small><h4>Information Technology Institute (ITI)</h4><p>Intensive focus on modern software development principles and architectures.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap contact"><div class="contact-main"><span class="tag">Let's connect</span><h3>Have a problem worth solving?</h3><p>Open to internships, freelance opportunities, collaborative projects, and technical conversations around AI, data, and IoT.</p><div class="buttons"><a class="btn primary" href="mailto:ahmedwally880@gmail.com">Email Ahmed</a><a class="btn" href="https://www.linkedin.com/in/ahmed-wally-4b312728b" target="_blank">LinkedIn ↗</a></div></div><div class="contact-list"><div class="contact-item"><small>Email</small><b>ahmedwally880@gmail.com</b></div><div class="contact-item"><small>Phone</small><b>01023925267</b></div><div class="contact-item"><small>Location</small><b>Menoufia, Egypt</b></div></div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Ahmed Mohamed Wally · AI & IoT Portfolio</div></footer>
+</body>
+</html>
